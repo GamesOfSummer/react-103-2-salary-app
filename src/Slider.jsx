@@ -1,4 +1,5 @@
 import React from 'react';
+import RatePerDay from './RatePerDay';
 
 class Slider extends React.Component {
     constructor(props) {
@@ -11,8 +12,6 @@ class Slider extends React.Component {
 
     handleChange(event) {
         this.setState({ value: event.target.value });
-
-        console.log('---');
     }
 
     handleSubmit(event) {
@@ -46,6 +45,8 @@ class Slider extends React.Component {
 
                     <label>$ {this.state.value} per hour</label>
                 </div>
+
+                <RatePerDay value={this.state.value} />
             </div>
         );
     }
