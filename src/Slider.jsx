@@ -22,18 +22,6 @@ class Slider extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
-                    <label>
-                        Name:
-                        <input
-                            type="text"
-                            value={this.state.value}
-                            onChange={this.handleChange}
-                        />
-                    </label>
-                    <input type="submit" value="Submit" />
-                </form>
-
                 <div className="my-5">
                     <label htmlFor="customRange1">Per hour amount :: </label>
                     <input
